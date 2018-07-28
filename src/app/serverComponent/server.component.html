@@ -1,0 +1,11 @@
+<h2>{{ Name }}</h2>
+<div>
+    <p>Server Id : {{ Server_Id }}</p>
+    <p>Server Name : {{ Server_Name }}</p>
+</div>
+
+<button (click)="ServerIsCreated()">Add  New  Named Server</button>
+<label>{{ EnteredValue }}</label>
+<input type="text" [ngModel]="EnteredValue" />
+<!-- <input type="text" (input)="addServerValue($event)" /> -->
+<p *ngIf="isServerCreated">{{newServerisCreated}}</p>
